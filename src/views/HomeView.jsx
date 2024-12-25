@@ -21,8 +21,8 @@ const HomeView = () => {
                 <Archive /> {/* github, it 블로그, 일상 블로그 */}
                 <Projects />
                 {/* <Career /> */}
+                <Footer /> {/* Copyright */}
             </Main>
-            <Footer /> {/* Copyright */}
         </div>
     )
 }
