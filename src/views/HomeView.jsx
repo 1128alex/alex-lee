@@ -18,7 +18,7 @@ const HomeView = () => {
                 <Intro /> {/* Job, Simple greeting(including name) */}
                 <AboutMe /> {/* Name, Phone, Email, School */}
                 <Skills /> { /*Language, Frontend, Backend, Devops */}
-                <Archive /> {/* github, it 블로그, 일상 블로그 */}
+                <Archive /> {/* github, it 블로그 */}
                 <Projects />
                 {/* <Career /> */}
                 <Footer /> {/* Copyright */}

@@ -1,0 +1,57 @@
+#header {
+    background-color: #31473A;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-box {
+    margin-left: 10px;
+
+    .logo {
+        text-decoration: none;
+        text-align: center;
+
+        color: white;
+        font-family: sans-serif;
+
+        .name {
+            margin: 0px;
+            font-size: 2em;
+            text-decoration: none;
+        }
+
+        .school {
+            font-size: 1.3em;
+            text-decoration: none;
+        }
+    }
+}
+
+.nav-box {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        color: white;
+
+        .item {
+            padding-top: 10px;
+            margin-right: 15px;
+
+            .link {
+                text-transform: uppercase;
+                color: inherit;
+                font: 'Roboto', sans-serif;
+                font-size: 1.3em;
+                text-decoration: none;
+            }
+        }
+    }
+}

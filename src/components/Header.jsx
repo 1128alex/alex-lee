@@ -2,18 +2,21 @@ import React from "react";
 
 const Header = () => {
     return (
-        <header>
-            <div>
-                <div>
-                    <a href="/">Alex Lee University of Waterloo</a>
+        <header id="header" role="banner">
+            <div id="header-container">
+                <div className="logo-box">
+                    <a href="/" className="logo">
+                        <div className="name">Alex Lee</div>
+                        <div className="school">University of Waterloo</div>
+                    </a>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#intro">intro</a></li>
-                        <li><a href="#aboutme">aboutme</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#archive">archive</a></li>
-                        <li><a href="#projects">projects</a></li>
+                <nav className="nav-box">
+                    <ul className="nav">
+                        <li className="item"><a href="#intro" className="link">intro</a></li>
+                        <li className="item"><a href="#aboutme" className="link">aboutme</a></li>
+                        <li className="item"><a href="#skills" className="link">skills</a></li>
+                        <li className="item"><a href="#archive" className="link">archive</a></li>
+                        <li className="item"><a href="#projects" className="link">projects</a></li>
                     </ul>
                 </nav>
             </div>
