@@ -44,9 +44,8 @@ const Intro = () => {
                 }}
             />
             <h1>Intro</h1>
-            <h1>
-                {" "}
-                Hello, <span ref={el} />{" "}
+            <h1 id="code">
+                Hello, <span ref={el} />
             </h1>
             <motion.div style={{
                 width: 300,
