@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import * as motion from "motion/react-client"
 import { useSpring, useScroll } from "motion/react"
+import about from "../assets/img/about.jpg";
 
 const Intro = () => {
     const el = useRef(null);
@@ -19,9 +20,10 @@ const Intro = () => {
             typed.destroy();
         };
     }, []);
+
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
+        stiffness: 300,
         damping: 30,
         restDelta: 0.001,
     })
@@ -46,8 +48,32 @@ const Intro = () => {
                 {" "}
                 Hello, <span ref={el} />{" "}
             </h1>
-            <div id="container"></div>
-            <motion.div
+            <motion.div style={{
+                width: 300,
+                height: 300,
+                backgroundColor: "#31473A",
+                borderRadius: 10,
+            }}>
+                <motion.img
+                    drag
+                    dragConstraints={{
+                        left: 0,
+                        right: 200,
+                        top: 0,
+                        bottom: 200,
+                    }
+                    }
+                    dragElastic={0.2}
+                    style={{
+                        width: 100,
+                        height: 100,
+                        backgroundColor: "#EDF4F2",
+                        borderRadius: 10,
+                    }}
+                    src={about}
+                />
+            </motion.div>
+            <motion.img
                 animate={{
                     scale: [1, 2, 2, 1, 1],
                     rotate: [0, 0, 180, 180, 0],
@@ -66,7 +92,9 @@ const Intro = () => {
                     backgroundColor: "#f5f5f5",
                     borderRadius: 5,
                 }}
+                src={about}
             />
+            <div id="container"></div>
         </div>
     );
 };
