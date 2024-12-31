@@ -67,7 +67,9 @@ const Intro = () => {
                         width: 100,
                         height: 100,
                         backgroundColor: "#EDF4F2",
-                        borderRadius: 10,
+                        // borderRadius: 10,
+                        borderRadius: 50,
+                        objectFit: "cover",
                     }}
                     src={about}
                 />
@@ -90,6 +92,7 @@ const Intro = () => {
                     height: 100,
                     backgroundColor: "#f5f5f5",
                     borderRadius: 5,
+                    objectFit: "cover",
                 }}
                 src={about}
             />
