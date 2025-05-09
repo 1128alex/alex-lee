@@ -10,11 +10,12 @@ const Intro = () => {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["I'm a Fullstack Software Developer"],
+            strings: ["Hello World! I am a Data Science Student at University of Waterloo. Welcome to my space!"],
             typeSpeed: 50,
-            loop: true,
-            loopCount: Infinity,
-            cursorChar: "|"
+            loop: false,
+            loopCount: 0,
+            cursorChar: "|",
+            whiteSpace: "pre",
         });
         return () => {
             typed.destroy();
@@ -41,61 +42,13 @@ const Intro = () => {
                     height: 10,
                     originX: 0,
                     backgroundColor: "#EDF4F2",
+
                 }}
             />
             <h1>Intro</h1>
             <h1 id="code">
-                Hello, <span ref={el} />
+                <span ref={el} />
             </h1>
-            <motion.div style={{
-                width: 300,
-                height: 300,
-                backgroundColor: "#31473A",
-                borderRadius: 10,
-            }}>
-                <motion.img
-                    drag
-                    dragConstraints={{
-                        left: 0,
-                        right: 200,
-                        top: 0,
-                        bottom: 200,
-                    }
-                    }
-                    dragElastic={0.2}
-                    style={{
-                        width: 100,
-                        height: 100,
-                        backgroundColor: "#EDF4F2",
-                        // borderRadius: 10,
-                        borderRadius: 50,
-                        objectFit: "cover",
-                    }}
-                    src={about}
-                />
-            </motion.div>
-            <motion.img
-                animate={{
-                    scale: [1, 2, 2, 1, 1],
-                    rotate: [0, 0, 180, 180, 0],
-                    borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-                }}
-                transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
-                    repeat: Infinity,
-                    repeatDelay: 1,
-                }}
-                style={{
-                    width: 100,
-                    height: 100,
-                    backgroundColor: "#f5f5f5",
-                    borderRadius: 5,
-                    objectFit: "cover",
-                }}
-                src={about}
-            />
             <div id="container"></div>
         </div>
     );
