@@ -13,16 +13,24 @@ import Footer from '../components/Footer';
 const HomeView = () => {
     return (
         <div>
-            <Header /> {/* Logo(Alex's Portfolio), Navigation */}
-            <Main>
-                <Intro /> {/* Job, Simple greeting(including name) */}
-                <AboutMe /> {/* Name, Phone, Email, School */}
-                <Skills /> { /*Language, Frontend, Backend, Devops */}
-                <Archive /> {/* github, it 블로그 */}
-                <Projects />
-                {/* <Career /> */}
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div style={{ width: "75 %", float: "left" }}>
+                    <Main>
+                        <Intro /> {/* Job, Simple greeting(including name) */}
+                        <AboutMe /> {/* Name, Phone, Email, School */}
+                        <Skills /> { /*Language, Frontend, Backend, Devops */}
+                        <Archive /> {/* github, it 블로그 */}
+                        <Projects />
+                        {/* <Career /> */}
+                    </Main>
+                </div>
+                <div>
+                    <Header /> {/* Logo(Alex's Portfolio), Navigation */}
+                </div>
+            </div>
+            <div>
                 <Footer /> {/* Copyright */}
-            </Main>
+            </div>
         </div>
     )
 }

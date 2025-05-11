@@ -3,11 +3,14 @@ import React from "react";
 const Header = () => {
     return (
         <header id="header" role="banner">
+            <div>
+                <h1>Header</h1>
+            </div>
             <div id="header-container">
                 <div className="logo-box">
                     <a href="/" className="logo">
                         <div className="name">Alex Lee</div>
-                        <div className="school">University of Waterloo</div>
+                        {/* <div className="school">University of Waterloo</div> */}
                     </a>
                 </div>
                 <nav className="nav-box">

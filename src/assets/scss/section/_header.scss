@@ -1,14 +1,13 @@
 #header {
-    background-color: #31473A;
+    background-color: white;
     padding: 10px 0;
     justify-content: space-between;
-    align-items: center;
 }
 
-#header-container {
-    display: flex;
-    justify-content: space-between;
-}
+// #header-container {
+//     // display: flex;
+//     justify-content: space-between;
+// }
 
 .logo-box {
     margin-left: 10px;
@@ -17,7 +16,7 @@
         text-decoration: none;
         text-align: center;
 
-        color: white;
+        color: black;
         font-family: sans-serif;
 
         .name {
@@ -39,7 +38,7 @@
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        color: white;
+        color: black;
 
         .item {
             padding-top: 10px;
