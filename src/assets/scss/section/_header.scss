@@ -1,20 +1,18 @@
 #header {
-    background-color: white;
     padding: 10px 0;
     justify-content: space-between;
 }
 
-// #header-container {
-//     // display: flex;
-//     justify-content: space-between;
-// }
+#header-container {
+    justify-content: space-between;
+}
 
 .logo-box {
     margin-left: 10px;
 
     .logo {
-        text-decoration: none;
-        text-align: center;
+        // text-decoration: none;
+        // text-align: center;
 
         color: black;
         font-family: sans-serif;
@@ -34,7 +32,6 @@
 
 .nav-box {
     .nav {
-        display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;

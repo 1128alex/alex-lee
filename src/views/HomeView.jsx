@@ -12,9 +12,9 @@ import Footer from '../components/Footer';
 
 const HomeView = () => {
     return (
-        <div>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "75 %", float: "left" }}>
+        <div id="background">
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div style={{ width: "90%", float: "left" }}>
                     <Main>
                         <Intro /> {/* Job, Simple greeting(including name) */}
                         <AboutMe /> {/* Name, Phone, Email, School */}
@@ -24,7 +24,7 @@ const HomeView = () => {
                         {/* <Career /> */}
                     </Main>
                 </div>
-                <div>
+                <div style={{ width: "10%", float: "right" }}>
                     <Header /> {/* Logo(Alex's Portfolio), Navigation */}
                 </div>
             </div>
