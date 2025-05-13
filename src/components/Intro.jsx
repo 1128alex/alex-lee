@@ -38,7 +38,7 @@ const Intro = () => {
                     <TypeAnimation
                         style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
                         sequence={[
-                            'Hello World!\nI am a Data Science Student\nat University of Waterloo.\nWelcome to my space!',
+                            'Hello World!\nI am Alex Lee, Data Science Student\nat University of Waterloo.\nWelcome to my space!',
                             1000,
                         ]}
                         repeat={0}
