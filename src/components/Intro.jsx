@@ -33,7 +33,7 @@ const Intro = () => {
             />
 
             <h1>Intro</h1>
-            <div>
+            <div style={{ paddingTop: "150px" }}>
                 <h1 id="code">
                     <TypeAnimation
                         style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
