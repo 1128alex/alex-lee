@@ -43,11 +43,16 @@ const Intro = () => {
                         speed={70}
                     />
                 </h1>
-                <h1>Hi! I'm Alex Lee</h1>
-                <div></div>
-            </div>
-            <div>
-                <div id="container"></div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 0.4,
+                        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                    }}
+                    style={{}}
+                ><h1>Hi! I'm Alex Lee</h1></motion.div>
+
             </div>
         </div >
     );
