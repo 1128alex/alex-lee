@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 import * as motion from "motion/react-client"
 import { useSpring, useScroll } from "motion/react"
 import { TypeAnimation } from 'react-type-animation';
@@ -38,13 +36,14 @@ const Intro = () => {
                     <TypeAnimation
                         style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
                         sequence={[
-                            'Hello World!\nI am Alex Lee, Data Science Student\nat University of Waterloo.\nWelcome to my space!',
+                            'Hello World! I\'m Alex Lee',
                             1000,
                         ]}
                         repeat={0}
                         speed={70}
                     />
                 </h1>
+                <h1>Hi! I'm Alex Lee</h1>
                 <div></div>
             </div>
             <div>
