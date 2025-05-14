@@ -32,7 +32,7 @@ const Intro = () => {
 
             <h1>Intro</h1>
             <div style={{ paddingTop: "150px" }}>
-                <h1 id="code">
+                {/* <h1 id="code">
                     <TypeAnimation
                         style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
                         sequence={[
@@ -42,16 +42,16 @@ const Intro = () => {
                         repeat={0}
                         speed={70}
                     />
-                </h1>
+                </h1> */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, scale: 1, y: 10 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{
-                        duration: 0.4,
-                        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                        duration: 0.5,
+                        scale: { type: "spring", visualDuration: 0.4, bounce: 2 },
                     }}
                     style={{}}
-                ><h1>Hi! I'm Alex Lee</h1></motion.div>
+                ><h1 style={{ fontSize: "150px" }}>Hi! I'm Alex Lee</h1></motion.div>
 
             </div>
         </div >
