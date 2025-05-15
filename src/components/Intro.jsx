@@ -1,6 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client"
-import { useSpring, useScroll } from "motion/react"
+import { useSpring, useScroll, color } from "motion/react"
 import { TypeAnimation } from 'react-type-animation';
 
 // import about from "../assets/img/about.jpg";
@@ -26,7 +26,7 @@ const Intro = () => {
                     right: 0,
                     height: 10,
                     originX: 0,
-                    backgroundColor: "#EDF4F2",
+                    backgroundColor: "#609ca4",
                 }}
             />
 
@@ -40,8 +40,8 @@ const Intro = () => {
                         scale: { type: "spring", visualDuration: 0.4, bounce: 2 },
                     }}
                     style={{}}
-                ><h1 style={{ fontSize: "150px", color: "#50C4B0" }}>Hi! I'm Alex Lee</h1></motion.div>
-
+                ><h1 style={{ fontSize: "150px", color: "#609ca4" }}>Hi! I'm Alex Lee</h1></motion.div>
+                <h1 id="subtitle" style={{ color: "#99a9af" }}>Turning data into insights</h1>
             </div>
         </div >
     );
