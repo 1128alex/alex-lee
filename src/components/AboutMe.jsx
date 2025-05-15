@@ -1,10 +1,10 @@
 import React from "react";
-import about from "../assets/img/about.jpg";
+import profile from "../assets/img/profile.jpg";
 
 const AboutMe = () => {
     return (
-        <div>
-            <h1>About Me</h1>
+        <div id="aboutme">
+            <h1 style={{ color: "#609ca4" }}>About Me</h1>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ width: "70%", float: "left" }}>
                     <p>
@@ -12,9 +12,8 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div style={{ width: "30%", float: "left" }}>
-                    {/* <img src={about} alt="" /> */}
-                    <img class="centered-and-cropped" width="450" height="550"
-                        style={{ borderRadius: "5%", objectFit: "cover" }} src={about} alt="Profile"></img>
+                    <img class="centered-and-cropped"
+                        style={{ borderRadius: "5%", objectFit: "cover", width: "95%", height: "90%" }} src={profile} alt="Profile"></img>
                 </div>
             </div>
         </div >

@@ -74,6 +74,8 @@ const HomeView = () => {
                     height: 10,
                     originX: 0,
                     backgroundColor: "#609ca4",
+                    borderBottomRightRadius: "50px",
+                    borderTopRightRadius: "50px",
                 }}
             />
 
