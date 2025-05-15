@@ -10,22 +10,31 @@ const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
 
     return (
         <header id="header" role="banner">
-            <div>
-                {/* <h1>Header</h1> */}
-            </div>
             <div id="header-container">
                 <nav className="nav-box" style={{ position: "fixed" }}>
                     <ul className="nav">
-                        <li onClick={() => scrollToSection(introRef)} className="item">
+                        <li
+                            onClick={() => scrollToSection(introRef)}
+                            className="item"
+                        >
                             <a href="#intro" className="link">intro</a>
                         </li>
-                        <li onClick={() => scrollToSection(aboutMeRef)} className="item">
+                        <li
+                            onClick={() => scrollToSection(aboutMeRef)}
+                            className="item"
+                        >
                             <a href="#aboutme" className="link">aboutme</a>
                         </li>
-                        <li onClick={() => scrollToSection(skillsRef)} className="item">
+                        <li
+                            onClick={() => scrollToSection(skillsRef)}
+                            className="item"
+                        >
                             <a href="#skills" className="link">skills</a>
                         </li>
-                        <li onClick={() => scrollToSection(projectsRef)} className="item">
+                        <li
+                            onClick={() => scrollToSection(projectsRef)}
+                            className="item"
+                        >
                             <a href="#projects" className="link">projects</a>
                         </li>
                     </ul>

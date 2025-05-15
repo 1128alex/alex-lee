@@ -42,6 +42,8 @@
         .item {
             padding-top: 10px;
             margin-right: 15px;
+            position: relative;
+            transition: transform 0.3s ease, color 0.3s ease;
 
             .link {
                 text-transform: uppercase;
@@ -49,6 +51,24 @@
                 font: 'Roboto', sans-serif;
                 font-size: 1.3em;
                 text-decoration: none;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #609ca4;
+                /* Line color */
+                transition: width 0.3s ease;
+                width: 100%;
+                /* Expand the line on hover */
             }
         }
     }
