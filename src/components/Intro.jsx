@@ -3,12 +3,10 @@ import * as motion from "motion/react-client"
 
 const Intro = () => {
 
-    
+
 
     return (
-        <div id="container">
-            
-
+        <div id="intro">
             <div style={{ paddingTop: "220px" }}>
                 <motion.div
                     initial={{ opacity: 0, scale: 1, y: 10 }}

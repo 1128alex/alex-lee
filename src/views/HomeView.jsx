@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 import { useSpring, useScroll } from "motion/react"
 
@@ -15,12 +15,51 @@ import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
 const HomeView = () => {
+    const introRef = useRef(null);
+    const aboutMeRef = useRef(null);
+    const skillsRef = useRef(null);
+    const projectsRef = useRef(null);
+
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 300,
         damping: 30,
         restDelta: 0.001,
     })
+
+    useEffect(() => {
+        const sections = [
+            { id: "intro", ref: introRef },
+            { id: "aboutme", ref: aboutMeRef },
+            { id: "skills", ref: skillsRef },
+            { id: "projects", ref: projectsRef },
+        ];
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        window.history.replaceState(null, "", `#${entry.target.id}`);
+                    }
+                });
+            },
+            { threshold: 0.6 } // Trigger when 60% of the section is visible
+        );
+
+        sections.forEach(({ ref }) => {
+            if (ref.current) {
+                observer.observe(ref.current);
+            }
+        });
+
+        return () => {
+            sections.forEach(({ ref }) => {
+                if (ref.current) {
+                    observer.unobserve(ref.current);
+                }
+            });
+        };
+    }, []);
 
     return (
         <div id="background">
@@ -40,16 +79,27 @@ const HomeView = () => {
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ width: "15%", float: "left" }}>
-                    <Header /> {/* Logo(Alex's Portfolio), Navigation */}
+                    <Header
+                        introRef={introRef}
+                        aboutMeRef={aboutMeRef}
+                        skillsRef={skillsRef}
+                        projectsRef={projectsRef}
+                    /> {/* Logo(Alex's Portfolio), Navigation */}
                 </div>
                 <div style={{ width: "85%", float: "right" }}>
                     <Main>
-                        <Intro /> {/* Job, Simple greeting(including name) */}
-                        <AboutMe /> {/* Name, Phone, Email, School */}
-                        <Skills /> { /*Language, Frontend, Backend, Devops
-                        {/* <Archive /> github, it 블로그 */}
-                        <Projects />
-                        {/* <Career /> */}
+                        <div ref={introRef} id="intro">
+                            <Intro /> {/* Job, Simple greeting(including name) */}
+                        </div>
+                        <div ref={aboutMeRef} id="aboutme">
+                            <AboutMe /> {/* Name, Phone, Email, School */}
+                        </div>
+                        <div ref={skillsRef} id="skills">
+                            <Skills /> {/* Language, Frontend, Backend, Devops */}
+                        </div>
+                        <div ref={projectsRef} id="projects">
+                            <Projects />
+                        </div>
                     </Main>
                 </div>
             </div>
