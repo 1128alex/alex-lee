@@ -14,7 +14,7 @@ const AboutMe = () => {
                 <div style={{ width: "30%", float: "left" }}>
                     {/* <img src={about} alt="" /> */}
                     <img class="centered-and-cropped" width="450" height="550"
-                        style={{ borderRadius: "5%", objectFit: "cover" }} src={about} alt="Profile Image"></img>
+                        style={{ borderRadius: "5%", objectFit: "cover" }} src={about} alt="Profile"></img>
                 </div>
             </div>
         </div >
