@@ -14,10 +14,10 @@ const HomeView = () => {
     return (
         <div id="background">
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div style={{ width: "6%", float: "left" }}>
+                <div style={{ width: "15%", float: "left" }}>
                     <Header /> {/* Logo(Alex's Portfolio), Navigation */}
                 </div>
-                <div style={{ width: "94%", float: "right" }}>
+                <div style={{ width: "85%", float: "right" }}>
                     <Main>
                         <Intro /> {/* Job, Simple greeting(including name) */}
                         <AboutMe /> {/* Name, Phone, Email, School */}
@@ -32,7 +32,7 @@ const HomeView = () => {
                 <Footer /> {/* Copyright */}
             </div>
         </div>
-    )
+    );
 }
 
 export default HomeView;

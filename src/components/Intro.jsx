@@ -15,7 +15,7 @@ const Intro = () => {
     })
 
     return (
-        <div>
+        <div id="container">
             <motion.div
                 id="scroll-indicator"
                 style={{
@@ -32,17 +32,6 @@ const Intro = () => {
 
             <h1>Intro</h1>
             <div style={{ paddingTop: "150px" }}>
-                {/* <h1 id="code">
-                    <TypeAnimation
-                        style={{ whiteSpace: 'pre-line', height: '195px', display: 'block' }}
-                        sequence={[
-                            'Hello World! I\'m Alex Lee',
-                            1000,
-                        ]}
-                        repeat={0}
-                        speed={70}
-                    />
-                </h1> */}
                 <motion.div
                     initial={{ opacity: 0, scale: 1, y: 10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -51,7 +40,7 @@ const Intro = () => {
                         scale: { type: "spring", visualDuration: 0.4, bounce: 2 },
                     }}
                     style={{}}
-                ><h1 style={{ fontSize: "150px" }}>Hi! I'm Alex Lee</h1></motion.div>
+                ><h1 style={{ fontSize: "150px", color: "#50C4B0" }}>Hi! I'm Alex Lee</h1></motion.div>
 
             </div>
         </div >
