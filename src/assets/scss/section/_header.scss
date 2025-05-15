@@ -13,9 +13,6 @@
     margin-left: 10px;
 
     .logo {
-        // text-decoration: none;
-        // text-align: center;
-
         color: black;
         font-family: sans-serif;
 
@@ -65,11 +62,16 @@
                 width: 0;
                 height: 2px;
                 background-color: #609ca4;
-                /* Line color */
                 transition: width 0.3s ease;
                 width: 100%;
-                /* Expand the line on hover */
             }
+        }
+
+        .item.active {
+            transform: scale(1.1);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #609ca4;
         }
     }
 }
