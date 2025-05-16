@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alex-lee/static/css/main.ded92b76.css",
-    "main.js": "/alex-lee/static/js/main.b8ae0aa8.js",
+    "main.js": "/alex-lee/static/js/main.90eace3c.js",
     "static/media/football_analysis.png": "/alex-lee/static/media/football_analysis.2b5cf1d54f0c37159e10.png",
     "static/media/signature.png": "/alex-lee/static/media/signature.72add95906be39d1e041.png",
     "static/media/matplotlib.png": "/alex-lee/static/media/matplotlib.2953699aea002056b492.png",
@@ -30,10 +30,10 @@
     "static/media/mongodb.png": "/alex-lee/static/media/mongodb.63edb84675ed370cd3fe.png",
     "index.html": "/alex-lee/index.html",
     "main.ded92b76.css.map": "/alex-lee/static/css/main.ded92b76.css.map",
-    "main.b8ae0aa8.js.map": "/alex-lee/static/js/main.b8ae0aa8.js.map"
+    "main.90eace3c.js.map": "/alex-lee/static/js/main.90eace3c.js.map"
   },
   "entrypoints": [
     "static/css/main.ded92b76.css",
-    "static/js/main.b8ae0aa8.js"
+    "static/js/main.90eace3c.js"
   ]
 }
