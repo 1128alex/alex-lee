@@ -63,7 +63,10 @@ const Header: React.FC<HeaderProps> = ({ introRef, aboutMeRef, skillsRef, projec
     return (
         <header role="banner" style={{ paddingLeft: "50%" }}>
             <div id="header" style={{ position: "fixed", height: "100%" }}>
-                <a href="#intro">
+                <span
+                    onClick={() => scrollToSection(introRef)}
+                    style={{ cursor: "pointer" }}
+                >
                     <img
                         src={logo}
                         alt="logo"
@@ -71,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ introRef, aboutMeRef, skillsRef, projec
                         height="100px"
                         style={{}}
                     />
-                </a>
+                </span>
                 <div id="header-container" >
                     <nav className="nav-box" >
                         <ul className="nav">
