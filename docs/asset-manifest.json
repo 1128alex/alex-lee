@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.22c0f702.css",
-    "main.js": "/portfolio/static/js/main.737cb492.js",
+    "main.js": "/portfolio/static/js/main.d0cc3078.js",
     "static/media/football_analysis.png": "/portfolio/static/media/football_analysis.2b5cf1d54f0c37159e10.png",
     "static/media/logo3.png": "/portfolio/static/media/logo3.b5fd25496ea18becf872.png",
     "static/media/matplotlib.png": "/portfolio/static/media/matplotlib.2953699aea002056b492.png",
@@ -27,10 +27,10 @@
     "static/media/mongodb.png": "/portfolio/static/media/mongodb.63edb84675ed370cd3fe.png",
     "index.html": "/portfolio/index.html",
     "main.22c0f702.css.map": "/portfolio/static/css/main.22c0f702.css.map",
-    "main.737cb492.js.map": "/portfolio/static/js/main.737cb492.js.map"
+    "main.d0cc3078.js.map": "/portfolio/static/js/main.d0cc3078.js.map"
   },
   "entrypoints": [
     "static/css/main.22c0f702.css",
-    "static/js/main.737cb492.js"
+    "static/js/main.d0cc3078.js"
   ]
 }

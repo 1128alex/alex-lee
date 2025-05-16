@@ -74,6 +74,7 @@ const HomeView: React.FC = () => {
                     backgroundColor: "#609ca4",
                     borderBottomRightRadius: "50px",
                     borderTopRightRadius: "50px",
+                    zIndex: 1000,
                 }}
             />
 
