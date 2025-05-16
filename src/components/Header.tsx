@@ -1,16 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, RefObject } from "react";
 
 // import logo from "../assets/img/logo.jpg";
 import logo from "../assets/img/logo3.png";
 
-const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
-    const [activeItem, setActiveItem] = useState(null);
+interface HeaderProps {
+    introRef: RefObject<HTMLDivElement | null>;
+    aboutMeRef: RefObject<HTMLDivElement | null>;
+    skillsRef: RefObject<HTMLDivElement | null>;
+    projectsRef: RefObject<HTMLDivElement | null>;
+}
 
-    const scrollToSection = (elementRef) => {
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: "smooth",
-        });
+const Header: React.FC<HeaderProps> = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
+    const [activeItem, setActiveItem] = useState<string | null>(null);
+
+    const scrollToSection = (elementRef: RefObject<HTMLDivElement | null>) => {
+        if (elementRef.current) {
+            window.scrollTo({
+                top: elementRef.current.offsetTop,
+                behavior: "smooth",
+            });
+        }
     };
 
     useEffect(() => {
@@ -38,10 +47,17 @@ const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
             }
         });
 
+        return () => {
+            sections.forEach(({ ref }) => {
+                if (ref.current) {
+                    observer.unobserve(ref.current);
+                }
+            });
+        };
     }, [introRef, aboutMeRef, skillsRef, projectsRef]);
 
     return (
-        <header id="header" role="banner" height="2000" style={{ paddingLeft: "60%" }}>
+        <header id="header" role="banner" style={{ paddingLeft: "60%" }}>
             <div>
                 <img
                     src={logo}

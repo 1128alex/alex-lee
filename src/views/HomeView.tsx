@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-
-import { useSpring, useScroll } from "motion/react"
-
+import { useSpring, useScroll, MotionValue } from "motion/react"
 import * as motion from "motion/react-client"
 
 import Header from '../components/Header';
@@ -14,14 +12,14 @@ import Projects from '../components/Projects';
 // import Career from '../components/Career';
 import Footer from '../components/Footer';
 
-const HomeView = () => {
-    const introRef = useRef(null);
-    const aboutMeRef = useRef(null);
-    const skillsRef = useRef(null);
-    const projectsRef = useRef(null);
+const HomeView: React.FC = () => {
+    const introRef = useRef<HTMLDivElement>(null);
+    const aboutMeRef = useRef<HTMLDivElement>(null);
+    const skillsRef = useRef<HTMLDivElement>(null);
+    const projectsRef = useRef<HTMLDivElement>(null);
 
     const { scrollYProgress } = useScroll()
-    const scaleX = useSpring(scrollYProgress, {
+    const scaleX: MotionValue<number> = useSpring(scrollYProgress, {
         stiffness: 300,
         damping: 30,
         restDelta: 0.001,
@@ -66,7 +64,7 @@ const HomeView = () => {
             <motion.div
                 id="scroll-indicator"
                 style={{
-                    scaleX,
+                    scaleX: scaleX as unknown as string | number,
                     position: "fixed",
                     top: 0,
                     left: 0,
