@@ -1,6 +1,7 @@
 import aws from "./aws.png";
 import bash from "./bash.png";
 import beautifulsoup from "./beautifulsoup.png";
+import bootstrap from "./bootstrap.png";
 import C from "./C.png";
 import CSharp from "./CSharp.png";
 import git from "./git.png";
@@ -17,15 +18,18 @@ import pandas from "./pandas.png";
 import python from "./python.png";
 import R from "./R.png";
 import react from "./react.png";
+import sass from "./sass.png";
 import scikit from "./scikit.png";
 import spring from "./spring.png";
 import sql from "./sql.png";
 import typescript from "./typescript.png";
+import yolo from "./yolo.png";
 
 const skillLogos = {
     aws,
     bash,
     beautifulsoup,
+    bootstrap,
     C,
     CSharp,
     git,
@@ -42,10 +46,12 @@ const skillLogos = {
     python,
     R,
     react,
+    sass,
     scikit,
     spring,
     sql,
     typescript,
+    yolo,
 };
 
 export default skillLogos;

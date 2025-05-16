@@ -59,11 +59,14 @@ const Header: React.FC<HeaderProps> = ({ introRef, aboutMeRef, skillsRef, projec
     return (
         <header id="header" role="banner" style={{ paddingLeft: "60%" }}>
             <div>
-                <img
-                    src={logo}
-                    alt="logo"
-                    className="profile-pic"
-                    height="100px" />
+                <a href="#intro">
+                    <img
+                        src={logo}
+                        alt="logo"
+                        className="profile-pic"
+                        height="100px"
+                    />
+                </a>
             </div>
             <div id="header-container">
                 <nav className="nav-box" style={{ position: "fixed" }}>

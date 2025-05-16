@@ -7,9 +7,7 @@ import Main from '../components/Main';
 import Intro from '../components/Intro';
 import AboutMe from '../components/AboutMe';
 import Skills from '../components/Skills';
-// import Archive from '../components/Archive';
 import Projects from '../components/Projects';
-// import Career from '../components/Career';
 import Footer from '../components/Footer';
 
 const HomeView: React.FC = () => {
@@ -43,7 +41,7 @@ const HomeView: React.FC = () => {
                     }
                 });
             },
-            { threshold: 0.6 } // Trigger when 60% of the section is visible
+            { threshold: 0.6 }
         );
 
         sections.forEach(({ ref }) => {
