@@ -34,7 +34,7 @@ const Skills: React.FC = () => {
 
     return (
         <section id="skills" style={{ paddingRight: "15%" }}>
-            <h1 style={{ color: "#609ca4", fontSize: "60px", marginBottom: "30px", paddingTop: "80px" }}>Skills</h1>
+            <h1 style={{ color: "#609ca4", fontSize: "60px", marginBottom: "30px", paddingTop: "90px" }}>Skills</h1>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "20px", borderRadius: "10px" }}>
                 {skillsData.map((skillCategory) => (
                     <div

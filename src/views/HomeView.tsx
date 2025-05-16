@@ -89,13 +89,13 @@ const HomeView: React.FC = () => {
                 </div>
                 <div style={{ width: "70%", float: "right" }}>
                     <Main>
-                        <div ref={introRef} id="intro">
+                        <div ref={introRef} id="intro" style={{ paddingBottom: "400px" }}>
                             <Intro /> {/* Job, Simple greeting(including name) */}
                         </div>
-                        <div ref={aboutMeRef} id="aboutme">
+                        <div ref={aboutMeRef} id="aboutme" style={{ paddingBottom: "400px" }}>
                             <AboutMe /> {/* Name, Phone, Email, School */}
                         </div>
-                        <div ref={skillsRef} id="skills">
+                        <div ref={skillsRef} id="skills" style={{ paddingBottom: "400px" }}>
                             <Skills /> {/* Language, Frontend, Backend, Devops */}
                         </div>
                         <div ref={projectsRef} id="projects">
