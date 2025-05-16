@@ -37,7 +37,9 @@ const HomeView: React.FC = () => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        window.history.replaceState(null, "", `#${entry.target.id}`);
+                        if (entry.target.id !== "intro" || window.location.hash) {
+                            window.history.replaceState(null, "", `#${entry.target.id}`);
+                        }
                     }
                 });
             },
