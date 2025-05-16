@@ -68,10 +68,21 @@
         }
 
         .item.active {
-            transform: scale(1.1);
+            transform: scale(1.2);
             text-decoration: underline;
             text-underline-offset: 4px;
             color: #609ca4;
+        }
+
+        .item.active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #609ca4;
+            transition: width 0.3s ease;
         }
     }
 }

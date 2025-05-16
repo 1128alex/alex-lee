@@ -14,8 +14,9 @@ const Intro = () => {
                     }}
                     style={{}}
                 >
-                    <h1 style={{ fontSize: "800%", color: "#609ca4" }}>Hi! I'm Alex Lee</h1>
-                    <h1 id="subtitle" style={{ color: "#99a9af" }}>Turning data into insights</h1>
+                    <h1 style={{ fontSize: "800%", color: "#609ca4" }}>Alex Lee</h1>
+                    <h1 id="subtitle" style={{ color: "#99a9af" }}>Student of University of Waterloo studying Data Science.</h1>
+                    <h1 id="subtitle" style={{ color: "#99a9af" }}>Welcome to my space!</h1>
                 </motion.div>
             </div>
         </div >

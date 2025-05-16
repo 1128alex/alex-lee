@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 
+// import logo from "../assets/img/logo.jpg";
+import logo from "../assets/img/logo3.png";
+
 const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
     const [activeItem, setActiveItem] = useState(null);
 
@@ -35,17 +38,17 @@ const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
             }
         });
 
-        return () => {
-            sections.forEach(({ ref }) => {
-                if (ref.current) {
-                    observer.unobserve(ref.current);
-                }
-            });
-        };
     }, [introRef, aboutMeRef, skillsRef, projectsRef]);
 
     return (
-        <header id="header" role="banner">
+        <header id="header" role="banner" height="2000" >
+            <div>
+                <img
+                    src={logo}
+                    alt="logo"
+                    className="profile-pic"
+                    height="100px" />
+            </div>
             <div id="header-container">
                 <nav className="nav-box" style={{ position: "fixed" }}>
                     <ul className="nav">
