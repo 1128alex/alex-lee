@@ -79,25 +79,25 @@ const Header: React.FC<HeaderProps> = ({ introRef, aboutMeRef, skillsRef, projec
                                 onClick={() => scrollToSection(introRef)}
                                 className={`item ${activeItem === "intro" ? "active" : ""}`}
                             >
-                                <a href="#intro" className="link">intro</a>
+                                <span className="link" style={{ cursor: "pointer" }}>intro</span>
                             </li>
                             <li
                                 onClick={() => scrollToSection(aboutMeRef)}
                                 className={`item ${activeItem === "aboutme" ? "active" : ""}`}
                             >
-                                <a href="#aboutme" className="link">aboutme</a>
+                                <span className="link" style={{ cursor: "pointer" }}>aboutme</span>
                             </li>
                             <li
                                 onClick={() => scrollToSection(skillsRef)}
                                 className={`item ${activeItem === "skills" ? "active" : ""}`}
                             >
-                                <a href="#skills" className="link">skills</a>
+                                <span className="link" style={{ cursor: "pointer" }}>skills</span>
                             </li>
                             <li
                                 onClick={() => scrollToSection(projectsRef)}
                                 className={`item ${activeItem === "projects" ? "active" : ""}`}
                             >
-                                <a href="#projects" className="link">projects</a>
+                                <span className="link" style={{ cursor: "pointer" }}>projects</span>
                             </li>
                         </ul>
                     </nav>
