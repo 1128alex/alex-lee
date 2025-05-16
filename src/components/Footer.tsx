@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
     return (
         <footer id="footer" role="contentinfo">
-            <div className="copyright">
-                &copy; 2024. Alex Jiwon Lee. All rights reserved.
+            <div className="copyright" style={{ color: "white" }}>
+                &copy; 2025. Alex Jiwon Lee. All rights reserved.
             </div>
         </footer>
     );
