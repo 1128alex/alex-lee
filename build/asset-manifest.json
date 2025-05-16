@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.22c0f702.css",
+    "main.js": "/portfolio/static/js/main.e0e33b32.js",
+    "static/media/football_analysis.png": "/portfolio/static/media/football_analysis.2b5cf1d54f0c37159e10.png",
+    "static/media/logo3.png": "/portfolio/static/media/logo3.b5fd25496ea18becf872.png",
+    "static/media/matplotlib.png": "/portfolio/static/media/matplotlib.2953699aea002056b492.png",
+    "static/media/profile2.jpg": "/portfolio/static/media/profile2.956f941fd05c9d66ee7a.jpg",
+    "static/media/linux.png": "/portfolio/static/media/linux.ad6e4b06906b0633e222.png",
+    "static/media/scikit.png": "/portfolio/static/media/scikit.f45ad3e0bc023e79f3c9.png",
+    "static/media/CSharp.png": "/portfolio/static/media/CSharp.2f6a6517def8209cd75e.png",
+    "static/media/bash.png": "/portfolio/static/media/bash.5c751fd601aec4fb83ac.png",
+    "static/media/C.png": "/portfolio/static/media/C.0cfbe908d8ec09aa5ecd.png",
+    "static/media/react.png": "/portfolio/static/media/react.bafc2a1dcbb5c8d3aefc.png",
+    "static/media/makefile.png": "/portfolio/static/media/makefile.fe1f8435dce2807942e4.png",
+    "static/media/final_project.png": "/portfolio/static/media/final_project.f411f98828b4a78bc54f.png",
+    "static/media/sql.png": "/portfolio/static/media/sql.c9c6f777de8707089f99.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.a9a1b76d8863ad0eda6d.png",
+    "static/media/R.png": "/portfolio/static/media/R.19968f644760d18f14af.png",
+    "static/media/python.png": "/portfolio/static/media/python.ad02162ade632b35893c.png",
+    "static/media/beautifulsoup.png": "/portfolio/static/media/beautifulsoup.f84a2c0bd8a84b71e6a9.png",
+    "static/media/aws.png": "/portfolio/static/media/aws.f1ffa65d14b176809c21.png",
+    "static/media/spring.png": "/portfolio/static/media/spring.e82018cf32e10af73393.png",
+    "static/media/java.png": "/portfolio/static/media/java.1c2ae6f23b520e06b67d.png",
+    "static/media/opencv.png": "/portfolio/static/media/opencv.e5c091d5c43a8845d720.png",
+    "static/media/mysql.png": "/portfolio/static/media/mysql.f228a0fc02a4a2a7703b.png",
+    "static/media/mongodb.png": "/portfolio/static/media/mongodb.63edb84675ed370cd3fe.png",
+    "index.html": "/portfolio/index.html",
+    "main.22c0f702.css.map": "/portfolio/static/css/main.22c0f702.css.map",
+    "main.e0e33b32.js.map": "/portfolio/static/js/main.e0e33b32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22c0f702.css",
+    "static/js/main.e0e33b32.js"
+  ]
+}
