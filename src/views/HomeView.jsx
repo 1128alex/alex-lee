@@ -80,7 +80,7 @@ const HomeView = () => {
             />
 
             <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div style={{ width: "15%", float: "left" }}>
+                <div style={{ width: "30%", float: "left" }}>
                     <Header
                         introRef={introRef}
                         aboutMeRef={aboutMeRef}
@@ -88,7 +88,7 @@ const HomeView = () => {
                         projectsRef={projectsRef}
                     /> {/* Logo(Alex's Portfolio), Navigation */}
                 </div>
-                <div style={{ width: "85%", float: "right" }}>
+                <div style={{ width: "70%", float: "right" }}>
                     <Main>
                         <div ref={introRef} id="intro">
                             <Intro /> {/* Job, Simple greeting(including name) */}

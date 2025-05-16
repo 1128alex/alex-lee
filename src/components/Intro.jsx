@@ -4,7 +4,7 @@ import * as motion from "motion/react-client"
 const Intro = () => {
     return (
         <div id="intro">
-            <div style={{ paddingTop: "220px" }}>
+            <div style={{ paddingTop: "220px", paddingLeft: "5%" }}>
                 <motion.div
                     initial={{ opacity: 0, scale: 1, y: 10 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}

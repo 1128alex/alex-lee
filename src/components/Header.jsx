@@ -41,7 +41,7 @@ const Header = ({ introRef, aboutMeRef, skillsRef, projectsRef }) => {
     }, [introRef, aboutMeRef, skillsRef, projectsRef]);
 
     return (
-        <header id="header" role="banner" height="2000" >
+        <header id="header" role="banner" height="2000" style={{ paddingLeft: "60%" }}>
             <div>
                 <img
                     src={logo}
