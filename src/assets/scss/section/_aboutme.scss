@@ -2,3 +2,22 @@
     height: 1000px;
     padding-top: 8px;
 }
+
+#resume {
+    display: inline-block;
+    color: #609ca4;
+    border: 2px solid #609ca4;
+    padding: 10px 36px;
+    padding-top: 8px;
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#resume:hover {
+    transition: 0.5s;
+    background: #609ca4;
+    color: #fff;
+}
