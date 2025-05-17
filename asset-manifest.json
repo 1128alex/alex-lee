@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alex-lee/static/css/main.ded92b76.css",
-    "main.js": "/alex-lee/static/js/main.90eace3c.js",
+    "main.css": "/alex-lee/static/css/main.51b205c6.css",
+    "main.js": "/alex-lee/static/js/main.428b0813.js",
     "static/media/football_analysis.png": "/alex-lee/static/media/football_analysis.2b5cf1d54f0c37159e10.png",
     "static/media/signature.png": "/alex-lee/static/media/signature.72add95906be39d1e041.png",
     "static/media/matplotlib.png": "/alex-lee/static/media/matplotlib.2953699aea002056b492.png",
@@ -13,6 +13,7 @@
     "static/media/scikit.png": "/alex-lee/static/media/scikit.f45ad3e0bc023e79f3c9.png",
     "static/media/CSharp.png": "/alex-lee/static/media/CSharp.2f6a6517def8209cd75e.png",
     "static/media/bash.png": "/alex-lee/static/media/bash.5c751fd601aec4fb83ac.png",
+    "static/media/ResumeV10WW.pdf": "/alex-lee/static/media/ResumeV10WW.439c26004dd5370e3ac1.pdf",
     "static/media/react.png": "/alex-lee/static/media/react.bafc2a1dcbb5c8d3aefc.png",
     "static/media/C.png": "/alex-lee/static/media/C.ebc3f6023b429c93e1ab.png",
     "static/media/makefile.png": "/alex-lee/static/media/makefile.fe1f8435dce2807942e4.png",
@@ -29,11 +30,11 @@
     "static/media/mysql.png": "/alex-lee/static/media/mysql.f228a0fc02a4a2a7703b.png",
     "static/media/mongodb.png": "/alex-lee/static/media/mongodb.63edb84675ed370cd3fe.png",
     "index.html": "/alex-lee/index.html",
-    "main.ded92b76.css.map": "/alex-lee/static/css/main.ded92b76.css.map",
-    "main.90eace3c.js.map": "/alex-lee/static/js/main.90eace3c.js.map"
+    "main.51b205c6.css.map": "/alex-lee/static/css/main.51b205c6.css.map",
+    "main.428b0813.js.map": "/alex-lee/static/js/main.428b0813.js.map"
   },
   "entrypoints": [
-    "static/css/main.ded92b76.css",
-    "static/js/main.90eace3c.js"
+    "static/css/main.51b205c6.css",
+    "static/js/main.428b0813.js"
   ]
 }
