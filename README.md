@@ -3,7 +3,7 @@
 This is the source repository for my personal website, showcasing my portfolio, background, and blog. Built with React and SASS, this site demonstrates modern front-end architecture, component-driven design, and custom styling.
 
 ##  Live Demo
-Check out the deployed site: [alex-lee.github.io/alex-lee](https://1128alex.github.io/alex-lee/) *(Note: JS required for full functionality.)*
+Check out the deployed site: [alex-lee.github.io/alex-lee](https://1128alex.github.io/alex-lee/)
 
 ---
 
