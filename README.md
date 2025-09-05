@@ -18,5 +18,3 @@ Check out the deployed site: [alex-lee.github.io/alex-lee](https://1128alex.gith
 
 ---
 
-##  Project Structure
-
