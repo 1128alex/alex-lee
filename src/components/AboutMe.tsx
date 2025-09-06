@@ -31,8 +31,14 @@ const AboutMe = () => {
                             </ul>
                         </div>
                         <div style={{ marginTop: "50px" }}>
-                            <a
+                            {/* <a
                                 href={require("../assets/ResumeV10WW.pdf")}
+                                target="_blank"
+                                id="resume"
+                                </a>
+                            > */}
+                            <a
+                                href={"https://github.com/1128alex/resume/blob/master/resume.pdf"}
                                 target="_blank"
                                 id="resume"
                             >

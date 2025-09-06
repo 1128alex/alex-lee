@@ -31,9 +31,10 @@
   <div id="root"></div>
   <script>
     (function () {
+      var isLocal = /localhost|127\.0\.0\.1/.test(location.hostname);
       var mainUrl = 'https://1128alex.github.io/alex-lee/';
-      if (window.location.href !== mainUrl) {
-        window.location.replace(mainUrl);
+      if (!isLocal && location.href !== mainUrl) {
+        location.replace(mainUrl);
       }
     })();
   </script>
